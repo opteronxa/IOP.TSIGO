@@ -1,10 +1,10 @@
-FROM openjdk:21-jdk
+FROM openjdk:25-jdk
 
 LABEL vendor=ByXanum
 
 WORKDIR /iop
 
-COPY IOP.TOPFLY/IOP.TOPFLY.jar /iop/IOP.TOPFLY.jar
+COPY IOP.TOPFLY/IOP.TOPFLY_2.0.jar /iop/IOP.TOPFLY.jar
 COPY IOP.TOPFLY/config.properties /iop/config.properties
 
 # Exponer puerto TCP
